@@ -108,7 +108,15 @@ The project is deployed using **Streamlit Community Cloud** for real-time sentim
 ```bash
 pip install -r requirements.txt
 
----
+### Step 2: (Optional) Train the Model
+```bash
+python train_model.py
+
+### Step 3: Run the Application
+```bash
+streamlit run app.py
+
+
 
 ## 💡 Key Features
 
