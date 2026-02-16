@@ -1,99 +1,67 @@
-# 🌍 AI-Based Multilingual Sentiment Analysis System  
-### Minor Project – Computer Engineering
+# 🎭 AI-Based Sentiment Analysis System  
+### Minor Project – Computer Engineering  
 
 ---
 
 ## 📌 Project Overview
 
-The AI-Based Multilingual Sentiment Analysis System is a Machine Learning application that classifies textual data as **Positive** or **Negative** sentiment using Natural Language Processing (NLP) techniques.
+The **AI-Based Sentiment Analysis System** is a Machine Learning application that classifies textual data as **Positive** or **Negative** using Natural Language Processing (NLP) techniques.
 
-The system is trained on the IMDB Movie Reviews dataset and deployed using Streamlit to provide real-time sentiment analysis through a web interface.
+The system is trained on the IMDB Movie Reviews dataset and deployed using Streamlit to provide real-time sentiment analysis through a user-friendly web interface.
 
-To improve accessibility and usability, the system supports **multilingual input** by automatically translating user text into English before performing sentiment prediction.
+This project demonstrates the practical implementation of NLP, feature extraction, and supervised machine learning in a real-world application.
 
 ---
 
 ## 🎯 Objectives
 
-- To implement sentiment classification using Machine Learning
-- To apply NLP techniques for text preprocessing
-- To use TF-IDF for feature extraction
-- To train a Logistic Regression model for classification
-- To build an interactive web application using Streamlit
-- To support multilingual sentiment analysis through automatic translation
+- Implement sentiment classification using Machine Learning  
+- Apply NLP techniques for text preprocessing  
+- Use TF-IDF for feature extraction  
+- Train a Logistic Regression model  
+- Build an interactive web application using Streamlit  
+- Display prediction confidence using probability scores  
 
 ---
 
 ## 📊 Dataset Information
 
-- Dataset Used: IMDB Movie Reviews Dataset
-- Total Reviews: 50,000
-- Classes: Positive and Negative
-- Train-Test Split: 80% Training / 20% Testing
+- Dataset: IMDB Movie Reviews Dataset  
+- Total Reviews: 50,000  
+- Classes: Positive and Negative  
+- Train-Test Split: 80% Training / 20% Testing  
 
 ---
 
 ## ⚙️ Methodology
 
-The project follows the below workflow:
+### 1️⃣ Data Cleaning
+- Lowercasing  
+- Removing special characters  
+- Removing unwanted symbols  
 
-### 1. Data Cleaning
-- Lowercasing
-- Removing special characters
-- Removing unwanted symbols
+### 2️⃣ Text Preprocessing
+- Tokenization  
+- Stopword removal  
+- Basic normalization  
 
-### 2. Text Preprocessing
-- Tokenization
-- Stopword removal
-- Basic normalization
-
-### 3. Feature Extraction
+### 3️⃣ Feature Extraction
 - TF-IDF (Term Frequency – Inverse Document Frequency)
 
-### 4. Model Training
+### 4️⃣ Model Training
 - Logistic Regression classifier
 
-### 5. Model Evaluation
-- Accuracy score calculation
-- Confidence score prediction using probability values
-
-### 6. Multilingual Processing
-- User input is translated to English using Google Translate
-- Translated text is passed to the trained ML model
-
----
-
-## 🌐 Multilingual Feature
-
-The system allows users to enter text in any language such as:
-
-- Hindi  
-- Marathi  
-- Spanish  
-- French  
-- etc.
-
-### Example
-
-Input:
-Mujhe yeh film bilkul achi nhi lagi
-
-Translated Text:
-I did not like this movie at all
-
-Prediction:
-Negative Sentiment Detected
-
-Confidence Score:
-91%
+### 5️⃣ Model Evaluation
+- Accuracy score calculation  
+- Probability-based confidence scoring  
 
 ---
 
 ## 📈 Model Performance
 
-- Algorithm Used: Logistic Regression  
-- Vectorization Technique: TF-IDF  
-- Model Accuracy: 89%
+- Algorithm: Logistic Regression  
+- Vectorization: TF-IDF  
+- Model Accuracy: ~89%  
 
 ---
 
@@ -101,18 +69,16 @@ Confidence Score:
 
 - Python  
 - Pandas  
+- NumPy  
 - Scikit-learn  
 - NLTK  
 - Streamlit  
-- Googletrans  
 
 ---
 
 ## 🏗 System Architecture
 
 User Input  
-↓  
-Language Translation  
 ↓  
 Text Preprocessing  
 ↓  
@@ -126,51 +92,44 @@ Confidence Score Display
 
 ---
 
-## 📂 Project Structure
-project-folder/
-│
-├── app.py
-├── model_utils.py
-├── train_model.py
-├── styles.css
-├── ui.py
-├── requirements.txt
-├── sentiment_model.pkl
-└── tfidf_vectorizer.pkl
-
 
 ---
 
-## 🚀 How to Run the Project
+## 🚀 Live Application
+
+The project is deployed using **Streamlit Community Cloud** for real-time sentiment analysis.
+
+---
+
+## ▶️ How to Run the Project Locally
 
 ### Step 1: Install Dependencies
 
+```bash
 pip install -r requirements.txt
-
-### Step 2: Train the Model
-
-python train_model.py
-
-### Step 3: Run the Application
-
-streamlit run app.py
 
 ---
 
 ## 💡 Key Features
 
 - Real-time sentiment prediction  
-- Confidence score visualization  
-- Progress bar indicator  
-- Clean and interactive UI  
-- Modular project structure  
-- Multilingual text support  
+- Displays Positive or Negative classification  
+- Confidence score calculation using probability values  
+- Progress bar visualization for prediction confidence  
+- Clean and user-friendly Streamlit interface  
+- Modular code structure (separate UI and model logic)  
+- TF-IDF based feature extraction  
+- Logistic Regression based classification model  
+- Deployment-ready on Streamlit Community Cloud  
 
 ---
 
 ## 🎓 Conclusion
 
-The AI-Based Multilingual Sentiment Analysis System successfully demonstrates the application of Natural Language Processing and Machine Learning for real-time sentiment classification.
+The AI-Based Sentiment Analysis System successfully demonstrates the practical implementation of Natural Language Processing (NLP) and Machine Learning for real-time sentiment classification.
 
-By integrating multilingual translation capabilities, the system improves accessibility and practical usability, making it adaptable for diverse users.
+By integrating text preprocessing, TF-IDF vectorization, and a Logistic Regression classifier, the system efficiently predicts whether a given review expresses positive or negative sentiment.
 
+The deployment using Streamlit enhances accessibility and usability, making the application interactive and user-friendly.  
+
+Overall, this project showcases a complete end-to-end machine learning workflow — from data preprocessing and model training to web deployment — making it a suitable and well-structured minor project in Computer Engineering.
